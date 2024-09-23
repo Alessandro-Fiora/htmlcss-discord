@@ -11,7 +11,7 @@
 }
 
 footer {
-  background-color: black;
+  background-color: hsl(205.71deg 9.09% 15.1%);
   padding-top: 10px;
 }
 
@@ -133,6 +133,12 @@ img {
 
 /* MAIN */
 
+main a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
 .band:nth-child(even) {
   background-color: rgba(246, 246, 246, 1);
 }
@@ -157,7 +163,7 @@ img {
   padding-top: 35px;
 }
 
-.column-small > h2 {
+main h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
@@ -168,9 +174,24 @@ img {
 }
 
 .bigbox {
-  height: 500px;
-  background-color: green;
-  border: 1px dashed black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .download-link {
+  background-color: hsl(227.31deg 59.09% 65.49%);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.bigbox h3 {
+  font-size: 1.7rem;
+  background-image: url(../img/stars.svg);
+  background-size: contain;
 }
 
 /* FOOTER */
@@ -183,33 +204,40 @@ img {
 
 .footer-right {
   display: flex;
-  flex-basis: 500px;
+  flex-basis: 70%;
 }
 
 .footer-left {
-  flex-basis: 300px;
+  flex-basis: 30%;
   background-color: pink;
   border: 1px dashed black;
+  padding: 50px;
 }
 
 .footer-column {
-  flex-basis: 125px;
+  flex-basis: 25%;
   background-color: rgb(45, 179, 179);
   border: 1px dashed white;
+  padding: 50px;
 }
 
 .footer-lower {
   display: flex;
   height: 50px;
   margin-top: 20px;
-  background-color: aquamarine;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
 }
 
-.footer-lower > .logo-container,
-.footer-lower > .button-container {
-  background-color: lightpink;
-  border: 1px dashed black;
-  padding: 5px;
+.itaflag {
+  max-height: 0.7rem;
+}
+
+footer .button-container {
+  background-color: hsl(227.31deg 59.09% 65.49%);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-decoration: none;
 }
