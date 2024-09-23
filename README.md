@@ -1,1 +1,1 @@
-Esercizio struttura sito Discord
+Esercizio contenuti sito Discord

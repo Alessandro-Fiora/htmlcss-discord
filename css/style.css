@@ -10,13 +10,6 @@
   padding: 0;
 }
 
-main :nth-child(even) {
-  background-color: lightgrey;
-}
-main :nth-child(even) > .card {
-  flex-direction: row-reverse;
-}
-
 footer {
   background-color: black;
   padding-top: 10px;
@@ -26,14 +19,14 @@ footer {
 
 .container {
   margin: 0 auto;
-  /* padding: 0 10px; */
-  width: 750px;
+  padding: 0 10px;
+  width: 1080px;
   max-width: 100%;
 }
 
 /* DEBUG */
 
-.debug {
+/* .debug {
   background-color: #ffbf00;
   border: 1px dashed black;
   padding: 5px;
@@ -49,19 +42,19 @@ footer {
 
 .debug .debug .debug .debug {
   background-color: yellow;
-}
+} */
 
 /* HEADER UPPER */
 
 .header-upper {
-  padding: 10px;
-  background-color: lightblue;
+  padding: 20px 10px 10px 10px;
+  background-color: rgb(37 95 234);
 }
 
 .page-header a {
   display: inline-block;
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
 .page-header .container {
@@ -69,28 +62,34 @@ footer {
   justify-content: space-between;
 }
 
-.page-header .logo {
-  /* da togliere */
-  width: 250px;
+.page-header .logo-container {
   text-align: left;
+  vertical-align: middle;
+  min-width: 25%;
 }
 
 .page-header .link-list {
   list-style-type: none;
   text-align: center;
-
-  /* da togliere */
-  width: 500px;
+  flex-basis: 500px;
+  flex-grow: 1;
 }
 
 .link-list > li {
   display: inline-block;
+  padding: 0 15px;
 }
 
 .page-header .login-container {
   text-align: right;
-  /* da togliere */
-  width: 250px;
+  min-width: 25%;
+}
+
+.login-container > .login {
+  color: black;
+  background-color: white;
+  padding: 7px 10px;
+  border-radius: 15px;
 }
 
 /* HEADER LOWER */
@@ -112,6 +111,13 @@ footer {
 }
 
 /* MAIN */
+
+main :nth-child(even) {
+  background-color: lightgrey;
+}
+main :nth-child(even) > .card {
+  flex-direction: row-reverse;
+}
 
 .band {
   padding: 40px;
