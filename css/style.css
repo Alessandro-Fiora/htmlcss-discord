@@ -128,23 +128,39 @@ p {
 
 /* MAIN */
 
+.wave-container {
+  background-image: url(../img/wave.svg);
+  background-size: cover;
+  height: 100px;
+  filter: opacity(3%);
+}
+
+.upsidedown {
+  transform: rotate(180deg);
+}
+
 main a {
   display: inline-block;
   text-decoration: none;
   color: white;
 }
 
-.band:nth-child(even) {
+/* .band:nth-of-type(even) {
+  background-color: rgba(246, 246, 246, 1);
+} */
+.grey {
   background-color: rgba(246, 246, 246, 1);
 }
 
-.band:nth-child(even) > .card {
+.reverse {
   flex-direction: row-reverse;
 }
 
+/* .card :nth-of-type(even) .card {
+} */
+
 .band {
   padding: 100px;
-  /* background-image: url(../img/wave.svg); */
 }
 
 .card {
