@@ -1,0 +1,185 @@
+/* :root{
+  --padding
+} */
+
+/* # RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main :nth-child(even) {
+  background-color: lightgrey;
+}
+main :nth-child(even) > .card {
+  flex-direction: row-reverse;
+}
+
+footer {
+  background-color: black;
+  padding-top: 10px;
+}
+
+/* UTILS */
+
+.container {
+  margin: 0 auto;
+  /* padding: 0 10px; */
+  width: 750px;
+  max-width: 100%;
+}
+
+/* DEBUG */
+
+.debug {
+  background-color: #ffbf00;
+  border: 1px dashed black;
+  padding: 5px;
+}
+
+.debug .debug {
+  background-color: yellow;
+}
+
+.debug .debug .debug {
+  background-color: red;
+}
+
+.debug .debug .debug .debug {
+  background-color: yellow;
+}
+
+/* HEADER UPPER */
+
+.header-upper {
+  padding: 10px;
+  background-color: lightblue;
+}
+
+.page-header a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header .logo {
+  /* da togliere */
+  width: 250px;
+  text-align: left;
+}
+
+.page-header .link-list {
+  list-style-type: none;
+  text-align: center;
+
+  /* da togliere */
+  width: 500px;
+}
+
+.link-list > li {
+  display: inline-block;
+}
+
+.page-header .login-container {
+  text-align: right;
+  /* da togliere */
+  width: 250px;
+}
+
+/* HEADER LOWER */
+
+.header-lower {
+  padding: 40px;
+  /* da togliere */
+  background-color: blue;
+}
+
+.page-header .hero {
+  margin: 0 auto;
+
+  /* da togliere */
+  width: 600px;
+  height: 300px;
+  background-color: pink;
+  border: 1px dashed black;
+}
+
+/* MAIN */
+
+.band {
+  padding: 40px;
+}
+
+.card {
+  display: flex;
+  height: 350px;
+}
+
+.card > .column-small {
+  /* da togliere */
+  flex-basis: 400px;
+
+  background-color: pink;
+  border: 1px dashed black;
+}
+
+.card > .column-big {
+  /* da togliere */
+  flex-basis: 600px;
+  background-color: aqua;
+  border: 1px dashed black;
+}
+
+.bigbox {
+  height: 500px;
+  background-color: green;
+  border: 1px dashed black;
+}
+
+/* FOOTER */
+
+.footer-upper {
+  display: flex;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.footer-right {
+  display: flex;
+  flex-basis: 500px;
+}
+
+.footer-left {
+  flex-basis: 300px;
+  background-color: pink;
+  border: 1px dashed black;
+}
+
+.footer-column {
+  flex-basis: 125px;
+  background-color: rgb(45, 179, 179);
+  border: 1px dashed white;
+}
+
+.footer-lower {
+  display: flex;
+  height: 50px;
+  margin-top: 20px;
+  background-color: aquamarine;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-lower > .logo-container,
+.footer-lower > .button-container {
+  background-color: lightpink;
+  border: 1px dashed black;
+  padding: 5px;
+}
